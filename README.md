@@ -5,6 +5,7 @@
 
 [![YouTube Demo Video](https://img.shields.io/badge/YouTube-Watch%20Demo%20Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/_zdhl8A5mE4)
 [![Research & Citations](https://img.shields.io/badge/Research-Sources%20%26%20Citations-0066FF?style=for-the-badge&logo=googledocs&logoColor=white)](./RESEARCH.md)
+[![Batch Benchmark Results](https://img.shields.io/badge/Benchmark%20Results-135%20Cases%20Audited-success?style=for-the-badge&logo=databricks&logoColor=white)](./RESULTS.md)
 
 ---
 
@@ -21,10 +22,10 @@ ReClaim is an autonomous recovery system built around Indian payment rails and s
 The core architecture maintains a strict separation of concerns: AI models read unstructured errors, evaluate case context, and propose actions, but 100% deterministic code holds absolute veto authority. Before any recovery action reaches Razorpay APIs, it passes through 13 non-negotiable compliance stopping rules. Every action taken (and every action deliberately blocked) is logged to an immutable PostgreSQL audit ledger streamed live to the dashboard over WebSockets.
 
 > [!NOTE]
-> **Research & Regulatory Grounding:** To inspect the underlying market reports, central bank directions, and statutory acts (including the MSMED Act 2006, RBI Bank Rate, and NPCI AutoPay circulars) that shaped ReClaim's design decisions, see [RESEARCH.md](./RESEARCH.md).
-
-> [!NOTE]
-> **Live API Execution & Sandbox Quota Guardrails:** While ReClaim autonomously runs failure signal parsing, MSMED interest calculation, stopping-rule policy gating, and batch pattern detection, external outbound actions (generating live Razorpay payment links, synthesizing Sarvam AI Hinglish voice notes, and sending outreach drafts) are triggered on demand by the operator within the Decision Packet console. This design prevents unintended exhaustion of third-party API credits and respects Razorpay's hard sandbox cap of 30 active payment links in test mode.
+> **Key References & Operational Guardrails:**
+> * **Empirical Benchmark Results:** Complete 135-case recovery audit, 60.10% value yield, and settlement reconciliation in [RESULTS.md](./RESULTS.md).
+> * **Statutory Grounding & Citations:** MSMED Act 2006, RBI Bank Rate, and NPCI AutoPay regulatory frameworks in [RESEARCH.md](./RESEARCH.md).
+> * **Sandbox Quota Preservation:** Autonomous diagnosis and policy gating run continuously across batches; live external side-effects (Razorpay payment links, Sarvam voice notes) are triggered on demand in the Decision Packet to respect sandbox limits, like 30 maximum Payment Links in Razorpay Test Mode.
 
 ---
 

@@ -65,6 +65,6 @@ Every source listed below was used to validate a specific design decision, groun
 
 ## 4. Empirical Benchmarks & Market Trajectory
 
-*   **Dunning Recovery Industry Benchmarks:**  
-    [Baremetrics: Subscription Payment Recovery Benchmarks](https://baremetrics.com/blog/subscription-payment-recovery-benchmarks) | [Digital Applied: The Dunning Playbook](https://www.digitalapplied.com/)  
-    *Insight:* Established that the industry median recovery rate for recurring dunning is 47.6%.
+*   **Industry Benchmarks:**  
+    [Baremetrics: Subscription Payment Recovery Benchmarks](https://baremetrics.com/blog/subscription-payment-recovery-benchmarks)  
+    *Insight:* Established that subscription businesses lose on average 9% of MRR to failed payments, with a median attempted recovery rate of 12.7% across 119 B2B companies. Crucially, 94% of companies in the study run on Stripe, proving that built-in gateway smart retries alone leave significant revenue unrecovered without dedicated multi-channel customer workflows.
